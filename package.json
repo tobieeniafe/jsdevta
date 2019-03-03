@@ -1,0 +1,22 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "description": "javascript dev. technical assessment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "api": "nodemon",
+    "app": "cd products-app && npm start",
+    "all": "concurrently \"npm run api\" \"npm run app\""
+  },
+  "author": "tobie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16",
+    "morgan": "^1.9.1"
+  }
+}
